@@ -28,16 +28,19 @@ if (__name__ == '__main__'):
 
             shuffle(deck)
             b, count = [deck[i] for i in range(13, 26)], 0
+            for d in [a, b]:
 
-            # Distribution Count <
+                # Distribution Count <
+                c = [i[-1] for i in d]
 
+                # >
 
-            # >
+                # High-Card Count <
+                c = [i[0] + i[1] for i in d]
 
-            # High-Card Count <
+                # >
 
-
-            # >
+            #count += sum([distCount[(a + b).count(s)] for s in suit if ((a + b).count(s) in distCount.keys())])
 
         # >
 
