@@ -10,7 +10,7 @@ from random import shuffle
 # Main <
 if (__name__ == '__main__'):
 
-    # while ![q, Q] <
+    # while not q or Q <
     print('Monte Carlo Simulation\n')
     while (input('[C]ontinue\n[Q]uit\n\nInput: ') not in ['q', 'Q']):
 
@@ -47,8 +47,8 @@ if (__name__ == '__main__'):
         # >
 
         # Output <
-        strVariable = '\n'.join([f'{k}\t{v}' for k, v in total.items()])
-        print(f'\nHand: {a}\nCount: {ac}\nResult:\n\n{strVariable}\n\n')
+        out = '\n'.join([f'{k}\t{round((v / sim) * 100, 2)}%' for k, v in total.items()])
+        print('\n\nHand: {}\nCount: {}\nResult:\n\n{}\n\n'.format(a, ac, out))
 
         # >
 
