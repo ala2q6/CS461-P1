@@ -1,2 +1,2 @@
 ## CS461P1
-> CS461 - Project 1
+> CS461: Project 1
