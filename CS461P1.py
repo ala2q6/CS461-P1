@@ -48,7 +48,7 @@ if (__name__ == '__main__'):
 
         # Output <
         out = '\n'.join([f'{k}\t{round((v / sim) * 100, 2)}%' for k, v in total.items()])
-        print('\n\nHand: {}\nCount: {}\nResult:\n\n{}\n\n'.format(a, ac, out))
+        print('\n\nHand: {}\nCount: {}\nResult:\n\n{}\n\n'.format(' '.join(i for i in a), ac, out))
 
         # >
 
